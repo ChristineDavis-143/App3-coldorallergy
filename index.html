@@ -17,10 +17,10 @@ Timothy Riedel
 triedel@utexas.edu
  
 Brief Description of Goal of Code:
-blah, blah, blah,
+This app is a basic quiz to assess the percent liklihood the patient has a flu or a cold
  
 Known Issues:
-blah, blah, blah, blah
+watery eyes, fever, sore throat, chronic or seasonal symptoms, and sneezing
 
 https://www.w3schools.com/w3css/default.asp
 https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file
@@ -109,13 +109,13 @@ function showResults(){
 	</div>
 	
     	<div id="content" class="w3-container">
-        <p>Are your eyes watery or itchy?</p>    
+        <p>Are your eyes watery or itchy?</p> 
 			<a href="#two" onclick= "allergyAdd()" class="w3-btn w3-black">Yes</a>
 			<a href="#two" onclick= "coldAdd()" class="w3-btn w3-black">No</a>
-    	</div>
+    	</div> <!-- My first question adding 2 buttons if yes then allergy; if no cold; changed oneclick to onclick-->
 </div>
 
-<div class="page" id="two">
+<div class="page" id="two"><!--Adding the #two and "two" was confusing at first to understand because the question ID is 1, but I now realize this is page 2-->
 	<div class="w3-container w3-flat-carrot">
 		<h1>Question 2</h1>
 	</div>
@@ -124,7 +124,7 @@ function showResults(){
 		<p>Do you have a fever?</p>
 			<a href="#three" onclick= "coldAdd()" class="w3-btn w3-black">Yes</a>
 			<a href="#three" onclick= "allergyAdd()" class="w3-btn w3-black">No</a>
-	</div>
+	</div><!-- My second question adding 2 buttons if yes then cold; if no allergy-->
 </div>
 
 <div class="page" id="three">
@@ -136,8 +136,8 @@ function showResults(){
         <p>Do you have a sore throat?</p>    
 			<a href="#four" onclick= "coldAdd()" class="w3-btn w3-black">Yes</a>
 			<a href="#four" onclick= "allergyAdd()" class="w3-btn w3-black">No</a>
-		</div>
-</div>
+		</div><!--My third question buttons function the same as the last -->
+</div><!--Just figured out I need this div here for spacing. Had too many div's earlier so it was hard to read-->
 
 <div class="page" id="four">
 	<div class="w3-container w3-flat-carrot">
@@ -149,12 +149,8 @@ function showResults(){
 			<a href="#five" onclick= "allergyAdd()" class="w3-btn w3-black">Yes</a>
 			<a href="#five" onclick= "coldAdd()" class="w3-btn w3-black">No</a>
 		</div>
-</div>
+</div><!-- Last question from your set, trying to maintain the same/consistent style and indentations-->
 
-
-
-
-		<!-- Question 5 -->
 <div class="page" id="five">
 	<div class="w3-container w3-flat-carrot">
 		<h1>Question 5</h1>
@@ -165,10 +161,9 @@ function showResults(){
 			<a href="#six" onclick="coldAdd()" class="w3-btn w3-black">Yes</a>
 			<a href="#six" onclick="allergyAdd()" class="w3-btn w3-black">No</a>
 		</div>
-</div>
+</div><!--My own question, making sure to change the cold and allergy buttons from the last question because it is flipped in this scenario -->
 
-<!-- Question 6 -->
-<div class="page" id="six">
+<div class="page" id="six"><!--change page -->
 	<div class="w3-container w3-flat-carrot">
 		<h1>Question 6</h1>
 	</div>
@@ -177,26 +172,26 @@ function showResults(){
         <p>Are you frequently and suddenly sneezing?</p>    
 			<a href="#resultsPage" onclick="allergyAdd()" class="w3-btn w3-black">Yes</a>
 			<a href="#resultsPage" onclick="coldAdd()" class="w3-btn w3-black">No</a>
-		</div>
-</div>
+		</div><!--My final question. I wonder how I can change the color or style of the buttons so they are pink and blue instead of orange and black? -->
+</div><!--the #resultsPage on the buttons are added to make sure this goes to the results page instead of page 7-->
 
 
-<div class="page" id="resultsPage">
+<div class="page" id="resultsPage"><!-- instead of page 7 I had to change this to results page-->
 	<div class="w3-container w3-flat-carrot">
 
-<!--Results Page-->
+	<!--Results Page--> <!--really struggled here-->
 <div class-"page"id="resultsPage">
 	<div class="w3-container w3-flat-carrot">
-<h1>Results</h1>
+		<h1>Results</h1>
 </div>
 
 <div class="w3-container">
 
 <button onclick="showResults()" class="w3-btn w3-green">
-Show Results
+Show Results <!--Make sure to add this so it shows on the page-->
 </button>
 
-<p id="results"></p>
+<p id="results"></p><!--make sure the page shows the results and identifies as the results page from the previous question-->
 
 </div>
 </div>
@@ -204,7 +199,7 @@ Show Results
 
 <footer class="w3-bottom w3-container w3-flat-carrot">
 	<p>DIY!</p>
-</footer>
+</footer><!--finished the app:) made sure the footer was here properly-->
 
 </body>
 </html>
